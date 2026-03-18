@@ -1,0 +1,50 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "kundenordner-oeffnen",
+  "title": "Kundenordner öffnen",
+  "description": "Kundenordner im Finder öffnen",
+  "icon": "command-icon.png",
+  "author": "Gerold Hinzen – XIMPL.digital",
+  "categories": ["Productivity"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Kundenordner öffnen",
+      "subtitle": "Kundenordner im Finder öffnen",
+      "description": "Zeigt eine Liste aller Kunden und öffnet den ausgewählten Ordner im Finder.",
+      "mode": "view",
+      "keywords": ["kunde", "kunden", "ordner", "finder"],
+      "preferences": [
+        {
+          "name": "kundenPath",
+          "type": "textfield",
+          "required": true,
+          "title": "Kunden Ordner Pfad",
+          "description": "Pfad zu deinem Kunden-Ordner (z. B. Google Drive)",
+          "placeholder": "/Users/dein-user/.../Kunden"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.83.1",
+    "@raycast/utils": "^1.17.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "22.5.4",
+    "@types/react": "18.3.3",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"Error: no publish\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
