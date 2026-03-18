@@ -1,12 +1,12 @@
-# Kunde öffnen – Raycast Extension
+# Kundenordner auslesen und öffnen – Raycast Extension
 
-Zeigt alle Kundenordner aus Google Drive (Geteilte Ablagen › Kunden) und öffnet sie im Finder.
+Zeigt alle Kundenordner aus Google Drive (Geteilte Ablagen › Kunden) und öffnet sie im Finder. Kann aber auch ein anderer Ordner sein ;) 
 
 ## Installation
 
 ```bash
 # In den Extension-Ordner wechseln
-cd kunde-extension
+cd raycast-extension-clientfolder
 
 # Dependencies installieren
 npm install
