@@ -30,3 +30,11 @@ Aktuell: `~/Library/CloudStorage/GoogleDrive-gerold@ximpl.digital/Geteilte Ablag
 
 > **Tipp:** Falls der Ordner auf deinem Mac anders heißt (z.B. "Shared drives" statt "Geteilte Ablagen"), 
 > öffne den Finder, navigiere zum Ordner und ziehe ihn ins Terminal – dort siehst du den echten Pfad.
+
+## Auf Node 22 wechseln?
+```
+nvm install 22
+nvm use 22
+npm install
+npm run dev
+```
